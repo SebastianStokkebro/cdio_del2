@@ -1,0 +1,35 @@
+towerBesked:
+Du er heldig og modtager 250!
+
+craterBesked:
+Du mister desværre 100...
+
+placeGatesBesked:
+Folket ved Place Gates hylder din ankomst! Du modtager 100!
+
+coldDesertBesked:
+Du befinder dig i Cold Desert og må desværre betale for et lift hjem... du skal af med 20.
+
+walledCityBesked:
+Du har fået en arbejdsopgave i Walled City som giver dig 180.
+
+monasteryBesked:
+Du bruger en hel dag ved klosteret, men hverken får eller bruger nogle penge.
+
+blackCaveBesked:
+Du skal til Black Cave... der er koldt og vådt, så du bruger et beløb på 70 for at skaffe dig ekstra tøj og en sovepose til overnatningen.
+
+hutsBesked:
+Du har været på jagt i bjergene og sælger dit bytte for 60.
+
+wereBesked:
+Du for vild og befinder dig ved Werewall.. du betaler en skummel mand 80 for at komme over på den anden side af muren, du skynder dig videre øjeblikkeligt! Kast igen!
+
+pitBesked:
+Din næste destination er det berømte og dybeste hul i jorden, "The Pit", men du skulle betale 50 for at få en rundvisning ved det.
+
+goldmineBesked:
+Du finder en mine fyldt med guld og sælger det for 650!!
+
+vundetBesked:
+TILLYKKE DU HAR VUNDET SPILLET,
