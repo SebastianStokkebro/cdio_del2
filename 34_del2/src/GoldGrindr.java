@@ -6,12 +6,12 @@ import desktop_resources.GUI;
 
 /**
  * 
+ * @author Alan
  * @author Andreas
  * @author Asef
- * @author David
- * @author Alan
- * @author Peter
  * @author Burhan
+ * @author David
+ * @author Peter
  * @author Sebastian
  *
  */
