@@ -85,64 +85,64 @@ public class GoldGrindr {
 			 */
 			switch(feltnummer) {
 			case 2:
-				GUI.showMessage("Du modtager 250");
+				GUI.showMessage(Læs.laes("towerBesked:"));
 				nuvKonto.tilføjPenge(250);
 				s1tur = !s1tur;
 				k1 = !k1;
 				break;
 			case 3:
-				GUI.showMessage("Du mister 100");
+				GUI.showMessage(Læs.laes("craterBesked:"));
 				nuvKonto.fratrækPenge(100);
 				s1tur = !s1tur;
 				k1 = !k1;
 				break;
 			case 4:
-				GUI.showMessage("Du modtager 100");
+				GUI.showMessage(Læs.laes("placeGatesBesked:"));
 				nuvKonto.tilføjPenge(100);
 				s1tur = !s1tur;
 				k1 = !k1;
 				break;
 			case 5:
-				GUI.showMessage("Du mister 20");
+				GUI.showMessage(Læs.laes("coldDesertBesked:"));
 				nuvKonto.fratrækPenge(20);
 				s1tur = !s1tur;
 				k1 = !k1;
 				break;
 			case 6:
-				GUI.showMessage("Du modtager 180");
+				GUI.showMessage(Læs.laes("walledCityBesked:"));
 				nuvKonto.tilføjPenge(180);
 				s1tur = !s1tur;
 				k1 = !k1;
-				break; 
+				break;
 			case 7:
-				GUI.showMessage("Der sker ikke noget");
+				GUI.showMessage(Læs.laes("monasteryBesked:"));
 				s1tur = !s1tur;
 				k1 = !k1;
 				break;
 			case 8:
-				GUI.showMessage("Du mister 70");
+				GUI.showMessage(Læs.laes("blackCaveBesked:"));
 				nuvKonto.fratrækPenge(70);
 				s1tur = !s1tur;
 				k1 = !k1;
 				break;
 			case 9:
-				GUI.showMessage("Du modtager 60");
+				GUI.showMessage(Læs.laes("hutsBesked:"));
 				nuvKonto.tilføjPenge(60);
 				s1tur = !s1tur;
 				k1 = !k1;
 				break;
 			case 10:
-				GUI.showMessage("Du mister 80 og får et ekstra kast");
+				GUI.showMessage(Læs.laes("wereBesked:"));
 				nuvKonto.fratrækPenge(80);
 				break;
 			case 11:
-				GUI.showMessage("Du mister 50");
+				GUI.showMessage(Læs.laes("pitBesked:"));
 				nuvKonto.fratrækPenge(50);
 				s1tur = !s1tur;
 				k1 = !k1;
 				break;
 			case 12:
-				GUI.showMessage("Du har ramt jackpot! Du modtager 650");
+				GUI.showMessage(Læs.laes("goldmineBesked:"));
 				nuvKonto.tilføjPenge(650);
 				s1tur = !s1tur;
 				k1 = !k1;
@@ -157,7 +157,7 @@ public class GoldGrindr {
 			 */
 			if(nuvKonto.getPenge() >= 3000) {
 				done = true;
-				GUI.showMessage("Tillykke, " + nuvSpiller.getNavn() + " du har vundet spillet!");
+				GUI.showMessage(Læs.laes("vundetBesked:") + " " + nuvSpiller.getNavn().toUpperCase() + "!!!!!");
 			}
 		}
 	}
