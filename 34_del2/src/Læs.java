@@ -4,7 +4,7 @@ import java.io.IOException;
 
 /**
  * Klassen læser den vedhæftede fil i hovedmappen,
- * og returnerer denne som streng.
+ * og returnerer en specifik linje afhængigt af dens titel som streng.
  * @author Sebastian
  *
  */
