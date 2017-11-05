@@ -2,6 +2,12 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ * Klassen læser den vedhæftede fil i hovedmappen,
+ * og returnerer denne som streng.
+ * @author Sebastian
+ *
+ */
 public class Læs {
 
 	public static String laes(String str) {
