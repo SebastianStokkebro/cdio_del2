@@ -5,21 +5,22 @@ import java.io.IOException;
 public class Læs {
 
 	public static String laes(String str) {
-		String file = "feltRegler.txt";
+		String fil = "feltRegler.txt";
 		BufferedReader reader;
-		String string = "";
+		String besked = "";
 		try {
-			reader = new BufferedReader(new FileReader(file));
-			String currentLine;
-			while ((currentLine = reader.readLine()) != null) {
-				if (currentLine.equals(str)) {
-					string = reader.readLine();
+			reader = new BufferedReader(new FileReader(fil));
+			String nuværendeLinje;
+			while ((nuværendeLinje = reader.readLine()) != null) {
+				if (nuværendeLinje.equals(str)) {
+					besked = reader.readLine();
 				}
 			}
 			reader.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return string;
+		return besked;
 	}
 }
+
