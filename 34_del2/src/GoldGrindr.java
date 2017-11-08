@@ -30,12 +30,12 @@ public class GoldGrindr {
 		 * Spillerne oprettes med navn og konto samt tilhørende biler.
 		 */
 		System.out.println("Indtast navn på spiller 1");
-		Spiller spiller1 = new Spiller(1000, keyb.next());
+		Konto spiller1 = new Konto(keyb.next(), 1000);
 		Car c1 = new Car.Builder().typeRacecar().patternHorizontalDualColor().primaryColor(Color.red)
 				.secondaryColor(Color.blue).build();
 
 		System.out.println("Indtast navn på spiller 2");
-		Spiller spiller2 = new Spiller(1000, keyb.next());
+		Konto spiller2 = new Konto(keyb.next(), 1000);
 		Car c2 = new Car.Builder().typeRacecar().patternHorizontalDualColor().primaryColor(Color.black)
 				.secondaryColor(Color.yellow).build();
 
@@ -48,7 +48,7 @@ public class GoldGrindr {
 
 		boolean done = false;
 		boolean s1tur = true;
-		Spiller nuvSpiller = spiller1;
+		Konto nuvSpiller = spiller1;
 
 		while (!done) {
 
@@ -140,4 +140,5 @@ public class GoldGrindr {
 	}
 
 }
+
 
