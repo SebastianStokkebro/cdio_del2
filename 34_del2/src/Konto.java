@@ -2,13 +2,14 @@
  * Pengebeholder
  * 
  * @author Burhan
+ * @author Sebastian
  * 
  */
-public class Konto {
-
+public class Konto extends Spiller{
 	private int penge;
-
-	public Konto(int penge) {
+	
+	public Konto(String navn, int penge) {
+		super(navn);
 		this.penge = penge;
 	}
 
@@ -19,7 +20,7 @@ public class Konto {
 	public void setPenge(int penge) {
 		this.penge = penge;
 	}
-
+	
 	public void tilføjPenge(int beløb) {
 		penge += beløb;
 	}
@@ -30,4 +31,5 @@ public class Konto {
 			setPenge(0);
 		}
 	}
+	
 }
