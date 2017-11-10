@@ -22,7 +22,9 @@ public class Konto extends Spiller{
 	}
 	
 	public void tilføjPenge(int beløb) {
-		penge += beløb;
+		int sum = penge += beløb;
+		if(sum <= 0) {
+			setPenge(0);
 	}
 
 	public void fratrækPenge(int beløb) {
