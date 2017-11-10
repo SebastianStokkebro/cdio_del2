@@ -1,0 +1,62 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class KontoTest {
+
+	Konto test = new Konto(100);
+	
+	@Test
+	public void testTilføjPenge() {
+		test.setPenge(100);
+		test.tilføjPenge(-200);
+		int expected = 0;
+		int actual = test.getPenge();
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	public void testFratrækPenge() {
+		test.setPenge(100);
+		test.fratrækPenge(200);
+		int expected = 0;
+		int actual = test.getPenge();
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	public void testTilføjMAX() {
+		test.setPenge(100);
+		test.tilføjPenge(2147483647);
+		int expected = 0;
+		int actual = test.getPenge();
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	public void testTilføjMIN() {
+		test.setPenge(100);
+		test.tilføjPenge(-2147483647);
+		int expected = 0;
+		int actual = test.getPenge();
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void testFratrækMAX() {
+		test.setPenge(100);
+		test.tilføjPenge(2147483647);
+		int expected = 0;
+		int actual = test.getPenge();
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void testFratrækMIN() {
+		test.setPenge(100);
+		test.tilføjPenge(-2147483647);
+		int expected = 0;
+		int actual = test.getPenge();
+		assertEquals(expected, actual);
+	}
+}
