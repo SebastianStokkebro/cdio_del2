@@ -1,0 +1,17 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TerningTest {
+
+	@Test
+	public void testKastVærdi() {
+		Terning TT = new Terning();
+		for(int i=0; i<100; i++) {
+			int resultat = TT.kast();
+			assertTrue(resultat>=1);
+			assertTrue(resultat<=6);
+		}
+	}
+
+}
